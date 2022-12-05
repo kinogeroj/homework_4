@@ -12,9 +12,7 @@ print()
 randomlist = []
 
 for i in range(0,20):
-    
     n = random.randint(1,9)
-    
     randomlist.append(n)
 
 print(f'Получился вот такой ряд чисел: {randomlist}.')
@@ -28,7 +26,6 @@ def deleteduplicate(inputlist) -> list:
     for i in inputlist:
 
         if i not in outputlist:
-
             outputlist.append(i) 
 
     return outputlist

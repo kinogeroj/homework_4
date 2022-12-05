@@ -24,17 +24,13 @@ def PrimeNumb(n) -> list:
     while d * d <= n:
 
         if n % d == 0:
-
             Result.append(d)
-            
             n //= d
 
         else:
-
             d += 1
 
     if n > 1:
-
         Result.append(n)
 
     return Result

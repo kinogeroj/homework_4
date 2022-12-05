@@ -22,21 +22,17 @@ k = input('Введите коэффициенты многочленов чер
 k = [int(i) for i in k]
 
 with open('file1.txt', 'w') as file:
-    
     file.write(createpoly(k[0]))
 
 with open('file2.txt', 'w') as file:
-    
     file.write(createpoly(k[1]))
 
 x = sympy.Symbol('x')
 
 with open('file1.txt', 'r') as file:
-
     a = file.read()
 
 with open('file2.txt', 'r') as file:
-    
     b = file.read()
 
 c = str(sympy.simplify(sympy.simplify(a) + sympy.simplify(b)))

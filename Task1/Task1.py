@@ -20,9 +20,7 @@ h = 0
 b = list()
 
 for x in str(pi):
-
     h += 1
-    
     b.append(x)
     
     if h == len(d):
