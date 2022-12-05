@@ -17,7 +17,7 @@ def PrimeNumb(n):
 
     """Функция раскладывает число на простые множители, на входе принимает натуральное число N"""
 
-    Ans = []
+    Result = []
 
     d = 2
 
@@ -25,7 +25,7 @@ def PrimeNumb(n):
 
         if n % d == 0:
 
-            Ans.append(d)
+            Result.append(d)
             
             n //= d
 
@@ -35,9 +35,9 @@ def PrimeNumb(n):
 
     if n > 1:
 
-        Ans.append(n)
+        Result.append(n)
 
-    return Ans
+    return Result
 
 print()
 
