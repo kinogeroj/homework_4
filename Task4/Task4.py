@@ -14,19 +14,17 @@ print()
 
 k = int(input('Введите степень многочлена (k): '))
 
-coeflist = []
+def createpoly(k, var_string = 'x') -> str:
 
-for i in range(0, k + 1):
-    
-    n = random.randint(-10, 10)
-    
-    coeflist.append(n)
+    """Фунцкия принимает на вход степень многочлена, на выходе получаем строку с многочленом."""
 
-print(f'Получили следующие коэффициенты для многочлена: {coeflist}.')
+    coeflist = []
 
-def createpoly(coeflist, var_string = 'x'):
-
-    """Фунцкия принимает на вход список коэффициентов, на выходе получаем строку с многочленом."""
+    for i in range(0, k + 1):
+        
+        n = random.randint(-10, 10)
+        
+        coeflist.append(n)
 
     resstr = ''
     
@@ -65,7 +63,7 @@ def createpoly(coeflist, var_string = 'x'):
     return resstr
 
 with open('file1.txt', 'w') as file:
-    file.write(createpoly(coeflist))
+    file.write(createpoly(k))
 
 print()
 

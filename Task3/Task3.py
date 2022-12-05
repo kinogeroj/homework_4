@@ -19,7 +19,7 @@ for i in range(0,20):
 
 print(f'Получился вот такой ряд чисел: {randomlist}.')
 
-def deleteduplicate(inputlist):
+def deleteduplicate(inputlist) -> list:
 
     """Функция принимает на вход список и удаляет из него повторяющиеся элементы."""
 
