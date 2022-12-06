@@ -30,12 +30,12 @@ with open('file2.txt', 'w') as file:
 x = sympy.Symbol('x')
 
 with open('file1.txt', 'r') as file:
-    a = file.read()
+    a = file.readline()
 
 with open('file2.txt', 'r') as file:
-    b = file.read()
+    b = file.readline()
 
-c = str(sympy.simplify(sympy.simplify(a) + sympy.simplify(b)))
+c = str(sympy.simplify(a + '+' + b))
 
 with open('result.txt', 'w') as file:
     file.write(c)
